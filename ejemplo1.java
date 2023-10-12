@@ -34,7 +34,8 @@ public class Semana_5 {
     
         double respuesta = 0;
         respuesta = analizaProlema(opcion, opcion2,opcion3);
-        System.out.println(respuesta);
+        JOptionPane.showMessageDialog(null, respuesta);
+        //System.out.println(respuesta);
 
     }
     public static double analizaProlema(int a, double b, double c){
@@ -46,6 +47,7 @@ public class Semana_5 {
             case 4 -> b / c;
             default -> 0;
         };
-        return JOptionPane.showMessageDialog(null, respuesta      );
+        return respuesta;
     }
+    
 }
